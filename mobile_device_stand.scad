@@ -26,17 +26,25 @@ difference() {
 		rotate_extrude(convexity = 5)
 			translate([hook/2-plate_w,0,0])
 				square([plate_w, plate_d]);
+
 	translate([-1, -1, plate_d/2-gap/2])
 		cube([gap,gap,gap]);
 
+	translate([hook-plate_w*2,hook/2,plate_w*2])
+		rotate([0,90,0])
+		cylinder(r=1.5,h=5);
+
 }
+
+
+
 
 
 translate([hook-plate_w+hook-plate_w*2,0,0])
 	cube([plate_w, plate_h, plate_d]);
 
-translate([hook-plate_w+hook-plate_w*2, plate_h, plate_d/2-gap/2+0.1])
-	cube([plate_w,gap/2,gap-0.2]);
+translate([hook-plate_w+hook-plate_w*2, plate_h, plate_d/2-gap/2+0.5])
+	cube([plate_w,gap/2,gap-1]);
 
 translate([hook+hook/2-plate_w, plate_h+hook/2 ,0])
-	cylinder(r=hook/2-plate_w-0.1, h=plate_d);
+	cylinder(r=hook/2-plate_w-0.5, h=plate_d);
