@@ -14,4 +14,4 @@ Hinged / adjustable single print mobile device stand.
  * Shell Thinkness: 1mm
 
 ## OpenSCAD Dependencies
-![Screw Library by syvwlch](https://github.com/syvwlch/Thingiverse-Projects/tree/master/Threaded%20Library "Screw Library")
+[Screw Library by syvwlch](https://github.com/syvwlch/Thingiverse-Projects/tree/master/Threaded%20Library)
