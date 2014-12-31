@@ -7,8 +7,6 @@ plate_d = 40;
 gap = 20;
 
 
-
-
 translate([hook-plate_w, (hook/2), 0])
 	cube([plate_w, plate_h, plate_d]);
 
@@ -42,7 +40,7 @@ translate([hook-plate_w+hook-plate_w*2, plate_h, plate_d/2-gap/2+0.5])
 translate([hook+hook/2-plate_w, plate_h+hook/2 ,0])
 	cylinder(r=hook/2-plate_w-0.5, h=plate_d);
 
-translate([hook+hook/2-plate_w, plate_h+hook/2 ,plate_d])
+translate([hook+hook/2-plate_w, plate_h+hook/2 ,plate_d-0.1])
 trapezoidThread( 
 	length=6,
 	pitch=2,
